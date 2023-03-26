@@ -4,16 +4,19 @@ import { demoProfilePicture } from "../utils/constants";
 import { Link } from "react-router-dom";
 
 const ChannelCard = (props) => (
-  <Box sx={{ boxShadow: "none", 
-  borderRadius: "20px",
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  width: { xs: '356px', md: '320px'},
-  height: '320px',
-  margin: 'auto',
-  marginTop: props.marginTop
-  }}>
+  <Box
+    sx={{
+      boxShadow: "none",
+      borderRadius: "20px",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      width: { xs: "356px", md: "320px" },
+      height: "320px",
+      margin: "auto",
+      marginTop: props.marginTop,
+    }}
+  >
     <Link to={`/channel/${props.channelDetail?.id?.channelId}`}>
       <CardContent
         sx={{
@@ -21,7 +24,7 @@ const ChannelCard = (props) => (
           flexDirection: "column",
           justifyContent: "center",
           textAlign: "center",
-          color: "#fff"
+          color: "#fff",
         }}
       >
         <CardMedia
@@ -44,10 +47,8 @@ const ChannelCard = (props) => (
         </Typography>
         {props.channelDetail?.statistics?.subscriberCount && (
           <Typography>
-            {parseInt(
-              props.channelDetail?.statistics?.subscriberCount
-            ).toLocaleString()}
-            Subscribers
+            {parseInt(props.channelDetail?.statistics?.subscriberCount).toLocaleString()}
+             {" "}Subscribers
           </Typography>
         )}
       </CardContent>

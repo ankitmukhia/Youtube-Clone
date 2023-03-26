@@ -6,15 +6,15 @@ import { Search } from "@mui/icons-material";
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handelSubmit = (e) => {
     e.preventDefault();
 
-    if(searchTerm) {
-      navigate(`/search/${searchTerm}`)
+    if (searchTerm) {
+      navigate(`/search/${searchTerm}`);
 
-      setSearchTerm('')
+      setSearchTerm("");
     }
   };
 

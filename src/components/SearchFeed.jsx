@@ -22,7 +22,7 @@ const SerarchFeed = () => {
       mb={2}
       sx={{ color: "white" }}
     >
-      Search Result for: <span style={{ color: "gray" }}>{searchTerm}</span> Videos
+      Search Result for : <span style={{ color: "gray" }}>{searchTerm}</span> Videos
     </Typography>
     <Videos videos={videos} />
   </Box>
