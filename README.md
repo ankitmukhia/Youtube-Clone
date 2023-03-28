@@ -2,7 +2,7 @@
 
 ### [Live Site]()
 
-![youtube clone]("ggg")
+![youtube clone](https://i.postimg.cc/Mpp44SYH/Screenshot-2023-03-21-164646.png)
 
 
 Setup: 
